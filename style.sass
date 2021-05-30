@@ -17,6 +17,7 @@ html, body
     display: flex
     justify-content: center
     align-items: center
+    height: 100%
     @media(min-width: 1124px)
         height: inherit
 main
@@ -28,33 +29,34 @@ main
         grid-template-rows: 1fr 2fr
         grid-template-areas: "img" "text-section"
     @media(min-width: 1124px)
-        margin: auto 20em
+        margin: auto 10em
         grid-template-columns: 1fr 1fr
         grid-template-areas: "text-section img"
 
 .text-section
     grid-area: text-section
-    padding: 6em
+    padding: 4em
     background: $primary-light-blue
     display: flex
     flex-direction: column
     justify-content: space-between
     @media(max-width: 1124px)
-        padding: 2em
+        padding: 1em
+        align-items: center
     header
         font-family: 'Inter', sans-serif
         font-weight: 700
         color: $font-main
-        font-size: 3em
+        font-size: 2.5em
         #accent
             color: $primary-accent
     p
         font-family: 'Inter', sans-serif
         font-weight: 400
         color: $font-secondary
-        font-size: 1.4em
-        margin-bottom: 4em
-        line-height: 1.7
+        font-size: 1.2em
+        margin-bottom: 3.5em
+        line-height: 1.5
         opacity: 80%
 #img
     grid-area: img

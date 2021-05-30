@@ -14,6 +14,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 @media (min-width: 1124px) {
   .wrapper {
@@ -35,7 +36,7 @@ main {
 }
 @media (min-width: 1124px) {
   main {
-    margin: auto 20em;
+    margin: auto 10em;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "text-section img";
   }
@@ -43,7 +44,7 @@ main {
 
 .text-section {
   grid-area: text-section;
-  padding: 6em;
+  padding: 4em;
   background: #1b1938;
   display: flex;
   flex-direction: column;
@@ -51,14 +52,15 @@ main {
 }
 @media (max-width: 1124px) {
   .text-section {
-    padding: 2em;
+    padding: 1em;
+    align-items: center;
   }
 }
 .text-section header {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   color: white;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 .text-section header #accent {
   color: #aa5cdb;
@@ -67,9 +69,9 @@ main {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1.4em;
-  margin-bottom: 4em;
-  line-height: 1.7;
+  font-size: 1.2em;
+  margin-bottom: 3.5em;
+  line-height: 1.5;
   opacity: 80%;
 }
 
