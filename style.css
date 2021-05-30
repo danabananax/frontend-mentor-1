@@ -11,10 +11,14 @@ html, body {
 }
 
 .wrapper {
-  height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 1124px) {
+  .wrapper {
+    height: inherit;
+  }
 }
 
 main {

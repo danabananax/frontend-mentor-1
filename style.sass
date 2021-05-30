@@ -14,10 +14,11 @@ html, body
 *, *:before, *:after
     box-sizing: inherit
 .wrapper
-    height: inherit
     display: flex
     justify-content: center
     align-items: center
+    @media(min-width: 1124px)
+        height: inherit
 main
     margin: 1em
     display: grid
