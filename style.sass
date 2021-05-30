@@ -14,6 +14,7 @@ html, body
 *, *:before, *:after
     box-sizing: inherit
 .wrapper
+    height: inherit
     display: flex
     justify-content: center
     align-items: center
@@ -23,7 +24,7 @@ main
     border-radius: 10px
     overflow: hidden
     @media(max-width: 1124px)
-        grid-template-rows: 1fr 1fr
+        grid-template-rows: 1fr 2fr
         grid-template-areas: "img" "text-section"
     @media(min-width: 1124px)
         margin: auto 20em
@@ -37,6 +38,8 @@ main
     display: flex
     flex-direction: column
     justify-content: space-between
+    @media(max-width: 1124px)
+        padding: 2em
     header
         font-family: 'Inter', sans-serif
         font-weight: 700

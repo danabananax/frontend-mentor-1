@@ -11,6 +11,7 @@ html, body {
 }
 
 .wrapper {
+  height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +25,7 @@ main {
 }
 @media (max-width: 1124px) {
   main {
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     grid-template-areas: "img" "text-section";
   }
 }
@@ -43,6 +44,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 1124px) {
+  .text-section {
+    padding: 2em;
+  }
 }
 .text-section header {
   font-family: "Inter", sans-serif;
